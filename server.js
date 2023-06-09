@@ -38,7 +38,7 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => {
+  .then(async () => {
     console.log(`MongoDB connected`);
     app.listen(PORT, () => console.log(`Server running on PORT ${PORT}`));
     //  Add data one time only or as needed to seed data
